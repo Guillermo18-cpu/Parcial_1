@@ -11,22 +11,36 @@ public class main  {
 
     
     sub1(numero_1, numero_2);
-    
+
     }   
 
     public static void sub1(double numero_1, double numero_2){ 
 
         if (numero_1 == 0 || numero_2 == 0) {
             System.out.println("Uno o ambos números son cero, no se puede determinar la multiplicación.");
-        } else if (numero_1 % numero_2 == 0) {
+        } 
+        else if (numero_1 % numero_2 == 0) {
             System.out.println(numero_1 + " es múltiplo de " + numero_2);
-        } else if (numero_2 % numero_1 == 0) {
+        } 
+        else if (numero_1 % numero_2 != 0) {
+            System.out.println(numero_1 + " no es múltiplo de " + numero_2);
+        } 
+          
+        
+        if (numero_2 % numero_1 == 0) {
             System.out.println(numero_2 + " es múltiplo de " + numero_1);
-        } else {
+        } 
+        else if (numero_2 % numero_1 != 0) {
+            System.out.println(numero_2 + " no es múltiplo de " + numero_1);
+        }
+        
+        if (numero_1 % numero_2 !=0 && numero_2 % numero_1 !=0) {
             System.out.println("Ninguno de los números es múltiplo del otro");
         }
     }
-     
+
 }
+     
+
  
   
