@@ -17,7 +17,7 @@ public class main  {
     public static void sub1(double numero_1, double numero_2){ 
 
         if (numero_1 == 0 || numero_2 == 0) {
-            System.out.println("Uno o ambos números son cero, no se puede determinar la multiplicación.");
+            System.out.println("Uno o ambos números son cero.");
         } 
         else if (numero_1 % numero_2 == 0) {
             System.out.println(numero_1 + " es múltiplo de " + numero_2);
